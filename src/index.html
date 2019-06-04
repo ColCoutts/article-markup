@@ -6,45 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="Article Markup" content="Semantic markup for a newspaper.">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link type="text/css" rel="stylesheet" href="./styles/styles.css">
   <title>article-markup</title>
 </head>
 
 <body>
-  <header>
-    <figure>
-      <img src="https://intelligentofficeuk.com/wp-content/uploads/2014/11/placelogo_placeholder.jpg" alt="header logo" />
-    </figure>
-    <nav>
-      <a href="">SIGN IN</a>
-      <a href="">NPR SHOP</a>
-      <a href="">DONATE</a>
-    </nav>
-    <section>
+  <header class="header">
+    <section class="main-nav">
+      <figure class="header--image">
+        <img src="https://intelligentofficeuk.com/wp-content/uploads/2014/11/placelogo_placeholder.jpg" alt="header logo" />
+      </figure>
+      <nav class="header--nav">
+        <a class="header--nav__link" href="">SIGN IN</a>
+        <a class="header--nav__link" href="">NPR SHOP</a>
+        <a class="header--nav__link" href="">DONATE</a>
+      </nav>
+    </section>
+    <section class="header--sub-nav">
       <nav>
-        <a href="">NEWS</a>
-        <a href="">ARTS & LIFE</a>
-        <a href="">MUSIC</a>
-        <a href="">SHOWS & PODCASTS</a>
-        <a href="">SEARCH</a>
+        <a class="header--sub-nav__link" href="">NEWS</a>
+        <a class="header--sub-nav__link" href="">ARTS & LIFE</a>
+        <a class="header--sub-nav__link" href="">MUSIC</a>
+        <a class="header--sub-nav__link" href="">SHOWS & PODCASTS</a>
+        <a class="header--sub-nav__link" href="">SEARCH</a>
       </nav>
     </section>
   </header>
-  <main>
-    <section>
-      <h4>TOPIC CATEGORY</h4>
-      <h1>LEADING STORY TITLE</h1>
-        <blockquote>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-          do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
-        </blockquote>
+  <main class="main">
+    <section class="main--top-story">
+      <article class="main--text-content">
+        <h4>TOPIC CATEGORY</h4>
+        <h1>LEADING STORY TITLE</h1>
+          <blockquote>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </blockquote>
+      </article>
         <figure>
           <img src="https://imgplaceholder.com/420x320/ff7f7f/333333/fa-image" alt="leading story image">
         </figure>
     </section>
 
-    <section>
+    <section class="main--sub-story">
         <h4>TOPIC CATEGORY</h4>
         <h2>Another News Heading</h2>
         <figure>
@@ -52,7 +57,7 @@
         </figure>
     </section>
 
-    <section>
+    <section class="main--sub-story">
         <h4>TOPIC CATEGORY2</h4>
         <h2>Another News Heading</h2>
         <figure>
@@ -60,7 +65,7 @@
         </figure>
     </section>
 
-    <section>
+    <section class="main--sub-story">
         <h4>TOPIC CATEGORY3</h4>
         <h2>Another News Heading</h2>
         <figure>
@@ -68,19 +73,18 @@
         </figure>
     </section>
 
-    <footer>
-      <section>
+    <footer class="footer">
+      <section class="footer--nav">
         <nav>
-          <a href="#">terms of use</a>
-          <a href="#">privacy</a>
-          <a href="#">your privacy choices</a>
-          <a href="#">text only</a>
+          <a class="footer--nav__link" href="#">terms of use</a>
+          <a class="footer--nav__link" href="#">privacy</a>
+          <a class="footer--nav__link" href="#">your privacy choices</a>
+          <a class="footer--nav__link" href="#">text only</a>
         </nav>
       </section>
     </footer>
     
   </main>
-
   <div id="root"></div>
 </body>
 

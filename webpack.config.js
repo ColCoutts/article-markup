@@ -28,7 +28,7 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
+        test: /\.less$/,
         use: [
           {
             loader: 'style-loader',
@@ -43,16 +43,10 @@ module.exports = {
             }
           },
           {
-            loader: 'postcss-loader',
+            loader: 'less-loader',
             options: {
               sourceMap: true,
-              plugins: [
-                require('postcss-import')(),
-                require('autoprefixer')(),
-                require('postcss-nested')(),
-                require('postcss-simple-vars')()
-              ]
-            }
+            } // compiles Less to CSS
           }
         ]
       },
